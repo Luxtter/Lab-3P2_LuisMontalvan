@@ -154,12 +154,16 @@ public class Lab3P2_LuisMontalvan {
                 for (Producto t : productos) {
                     cadena2 += productos.indexOf(t) + ". " + t + "\n";
                 }
-                System.out.print("--Productos--\n" + cadena + "Elija el producto a modificar");
+                System.out.print("--Productos--\n" + cadena2 + "Elija el producto a eliminar");
                 pochita = new Scanner(System.in);
-                int pos = pochita.nextInt();
+                int pose = pochita.nextInt();
+                if (pose>=0&&pose<productos.size()) {
+                    productos.remove(pose);
+                }
                 break;
             //menu opcion 4
             case 5:
+                
                 break;
             //menu opcion 5
             case 6:
