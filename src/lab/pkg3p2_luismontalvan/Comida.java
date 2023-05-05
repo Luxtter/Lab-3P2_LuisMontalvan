@@ -9,7 +9,7 @@ package lab.pkg3p2_luismontalvan;
  * @author luism
  */
 public class Comida extends Producto{
-    private boolean vencimiento;
+    
     private String ven;
 
     public Comida() {
@@ -19,20 +19,6 @@ public class Comida extends Producto{
     public Comida(String ven, String nombre, double precio) {
         super(nombre, precio);
         this.ven = ven;
-    }
-
-    
-
-    public boolean isVencimiento() {
-        return vencimiento;
-    }
-
-    public void setVencimiento(boolean vencimiento) {
-        if (vencimiento==true) {
-            this.ven= "Si";
-        }else{
-            this.ven= "No";
-        }
     }
 
     public String getVen() {
