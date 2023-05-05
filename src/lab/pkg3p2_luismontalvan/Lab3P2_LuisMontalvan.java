@@ -32,12 +32,42 @@ public class Lab3P2_LuisMontalvan {
                     + "\n8.Salir"
                     + "\nElegir una opcion: ");
         }
+        String nombre="";
+        double precio=0;
         switch (opc) {
             case 1:
-                
+                pochita= new Scanner(System.in);
+                System.out.print("Ingrese el nombre del producto: ");
+                nombre = pochita.nextLine();
+                pochita= new Scanner(System.in);
+                System.out.print("Ingrese el precio del producto: ");
+                precio = pochita.nextDouble();
+                System.out.println("--Estado del producto--"
+                        + "\n1.Vencido"
+                        + "\n2.No vencido"
+                        + "\nElija una opcion: ");
+                pochita= new Scanner(System.in);
+                int vencido= pochita.nextInt();
+                String ven= "";
+                if (vencido==1) {
+                    ven= "Si";
+                }else{
+                    ven = "No";
+                }
+                productos.add(new Comida(ven, nombre, precio));
                 break;
                 //menu opcion 1
             case 2:
+                pochita= new Scanner(System.in);
+                System.out.print("Ingrese el nombre del producto: ");
+                nombre = pochita.nextLine();
+                pochita= new Scanner(System.in);
+                System.out.print("Ingrese el precio del producto: ");
+                precio = pochita.nextDouble();
+                System.out.print("Ingrese la cantidad de ml del producto: ");
+                pochita= new Scanner(System.in);
+                int ml= pochita.nextInt();
+                productos.add(new Bebida(ml, nombre, precio));
                 break;
                 //menu opcion 2
             case 3:

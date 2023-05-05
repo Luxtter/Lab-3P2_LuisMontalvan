@@ -16,10 +16,12 @@ public class Comida extends Producto{
     
     }
 
-    public Comida(boolean vencimiento, String nombre, double precio) {
+    public Comida(String ven, String nombre, double precio) {
         super(nombre, precio);
-        this.vencimiento = vencimiento;
+        this.ven = ven;
     }
+
+    
 
     public boolean isVencimiento() {
         return vencimiento;
@@ -31,6 +33,14 @@ public class Comida extends Producto{
         }else{
             this.ven= "No";
         }
+    }
+
+    public String getVen() {
+        return ven;
+    }
+
+    public void setVen(String ven) {
+        this.ven = ven;
     }
 
     public String getNombre() {
