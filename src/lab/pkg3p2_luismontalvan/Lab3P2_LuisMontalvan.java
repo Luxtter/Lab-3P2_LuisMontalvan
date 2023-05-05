@@ -186,6 +186,7 @@ public class Lab3P2_LuisMontalvan {
                 break;
             //menu opcion 6
             case 7:
+                
                 break;
             //menu opcion 7
             default:
