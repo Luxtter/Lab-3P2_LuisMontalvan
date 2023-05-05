@@ -163,10 +163,26 @@ public class Lab3P2_LuisMontalvan {
                 break;
             //menu opcion 4
             case 5:
-                
+                String cadena3 = "--Productos--\n\n--Comidas--\n";
+                for (int i = 1; i < productos.size(); i++) {
+                    if (productos.get(i)instanceof Comida) {
+                        cadena3 += i+". "+productos.get(i-1);
+                    }
+                }
+                cadena3 += "\n--Bebidas--\n";
+                for (int i = 1; i < productos.size(); i++) {
+                    if (productos.get(i)instanceof Bebida) {
+                        cadena3 += i+". "+productos.get(i-1);
+                    }
+                }
                 break;
             //menu opcion 5
             case 6:
+                String cadena4 = "";
+                for (Producto t : productos) {
+                    cadena4 += productos.indexOf(t) + ". " + t + "\n";
+                }
+                System.out.print("--Productos--\n"+cadena4);
                 break;
             //menu opcion 6
             case 7:
