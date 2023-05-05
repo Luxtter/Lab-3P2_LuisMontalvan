@@ -4,6 +4,9 @@
  */
 package lab.pkg3p2_luismontalvan;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
  * @author luism
@@ -14,9 +17,46 @@ public class Lab3P2_LuisMontalvan {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        while (true) {            
-            
+        ArrayList<Producto> productos = new ArrayList();
+        ArrayList<Producto> listacomp = new ArrayList();
+        Scanner pochita = new Scanner(System.in);
+        int opc = 0;
+        while (opc!=8) {            
+            System.out.print("--Menu--\n1.Agregar Comida"
+                    + "\n2.Agregar Bebida"
+                    + "\n3.Modificar Productos"
+                    + "\n4.Eliminar Producto"
+                    + "\n5.Mostrar Producto"
+                    + "\n6.Generar Compra"
+                    + "\n7.Registro Compras"
+                    + "\n8.Salir"
+                    + "\nElegir una opcion: ");
+        }
+        switch (opc) {
+            case 1:
+                
+                break;
+                //menu opcion 1
+            case 2:
+                break;
+                //menu opcion 2
+            case 3:
+                break;
+                //menu opcion 3
+            case 4:
+                break;
+                //menu opcion 4
+            case 5:
+                break;
+                //menu opcion 5
+            case 6:
+                break;
+                //menu opcion 6
+            case 7:
+                break;
+                //menu opcion 7
+            default:
+                throw new AssertionError();
         }
     }
     
