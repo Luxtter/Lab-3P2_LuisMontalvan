@@ -101,7 +101,7 @@ public class Lab3P2_LuisMontalvan {
                                     ((Comida) productos.get(pos)).setPrecio(pochita.nextDouble());
                                     break;
                                 case 3:
-                                    System.out.println("--Estado del producto--"
+                                    System.out.print("--Estado del producto--"
                                             + "\n1.Vencido"
                                             + "\n2.No vencido"
                                             + "\nElija una opcion: ");
@@ -169,6 +169,9 @@ public class Lab3P2_LuisMontalvan {
                     for (int i = 1; i < productos.size(); i++) {
                         if (productos.get(i) instanceof Comida) {
                             cadena3 += i + ". " + productos.get(i - 1);
+                            
+                        }else{
+                        System.out.println(productos.get(i));
                         }
                     }
                     cadena3 += "\n--Bebidas--\n";
@@ -177,7 +180,9 @@ public class Lab3P2_LuisMontalvan {
                             cadena3 += i + ". " + productos.get(i - 1);
                         }
                     }
+                    System.out.println(cadena3);
                     break;
+                    
                 //menu opcion 5
                 case 6:
                     String cadena4 = "";
@@ -194,8 +199,8 @@ public class Lab3P2_LuisMontalvan {
                         }else{
                             System.out.println("Opcion no valida");
                         }
-                        System.out.print("Desea comprar algo mas\n1.Si\n2.No");
-                        int resp2 = pochita.nextInt();
+                        System.out.print("Desea comprar algo mas\n1.Si\n2.No\nELija una opcion: ");
+                        resp = pochita.nextInt();
                     }
                     double total = 0;
                     String cadenaf = "---Factura---\n\n";
